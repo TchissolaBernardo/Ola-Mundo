@@ -1,0 +1,159 @@
+DOCTYPE html>
+<html>
+<head>
+  <title>Area de listagem de Facturas</title>
+   <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--materialize CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel="stylesheet" type="text/html" href="FactVer.html">
+   <link rel="stylesheet" type="text/html" href="FactCad.html">
+   <link rel="stylesheet" type="text/css" href="FactAlt.html">
+   <link rel="stylesheet" type="text/css" href="Home.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper ">
+      
+        <div class="container">
+              <!--logo-->
+              <a href="#" class="brand-logo">VeCa</a>
+
+              <a href="#" class="sidenav-trigger " data-target="mobile-navbar"><i class="material-icons">menu</i></a>
+                     
+
+                <ul class=" hide-on-med-and-down right" >
+                           <li><a href="Home.html">Home</a></li>
+                           <li><a href="Adm.html">Adm </a></li>
+                           <li><a href="Casa.html">Casas</a></li>
+                           <li><a href="Prop.html">Proprietario</a></li>
+                           <li><a href="Client.html">Clientes</a></li>
+                           <li><a href="Fact.html">Facturas</a></li>
+                 
+                </ul>
+        </div>
+      
+    </div>
+ </nav>     
+  <li> 
+    <ul class="sidenav " id="mobile-navbar" >
+      <li class="active"><a href="Home.html" ><i class="material-icons ">home</i> Home</a></li>
+      <li class="active"><a href="Adm.html"  ><i class="material-icons ">content_paste</i> Adm </a></li>
+      <li class="active"><a href="Casa.html"  ><i class="material-icons">store</i> Casas </a></li>
+      <li class="active"><a href="Prop.html" ><i class="material-icons">person</i> Proprietario</a></li>
+      <li class="active"><a href="Client.html"><i class="material-icons">contact_mail</i> Clientes</a></li>
+      <li class="active"><a href="Fact.html"  ><i class="material-icons">print</i> Facturas</a></li>
+      </ul> 
+    </li>
+  
+ <!--Tabelass-->
+<table  >
+        <thead>
+          <tr>
+              <th>Nº</th>
+              <th>COD.- COMPRA</th>
+              <th>QUANTIDADE</th>
+              <th>ESTADO DA FACTURA</th>
+              <th>TESTEMUNHA</th>
+              <th>DATA DE REGISTRO</th>
+              <th> DATA ACTUALIZADA</th>
+              <th>Opções</th>
+
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>98302YH</td>
+            <td>0000075</td>
+            <td>.......</td>
+            <td>2DUAS CASAS </td>
+            <td>MARCOS BE</td>
+            <td>02/07/2020</td>
+            <td>03/07/2020</td>
+
+            <td>
+                 <a  href="FactVer.html" class="btn waves-effect waves-light ">
+                     <i class="material-icons prefix ">remove_red_eye</i>
+                   Ver</button>  
+            <td>
+                  <a href="FactAlt.html" class="btn waves-effect waves-light orange darken-2">
+                    <i class="material-icons ">edit
+                  </i>Alterar</a  >
+           </td>
+           <td>
+                   <a href="#" class="btn waves-effect waves-light red ">
+                   <i class="material-icons  ">delete</i> Iliminar </a >
+           </td>
+       
+           
+          </tr>
+          <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+           <td>a</td>
+           <td></td>
+            <td>
+                 <a  href="FactVer.html" class="btn waves-effect waves-light ">
+                     <i class="material-icons prefix ">remove_red_eye</i>Ver</a>  
+            <td>
+                  <a  href="FactAlt.html" class="btn waves-effect waves-light orange darken-2"> 
+                    <i class="material-icons ">edit
+                  </i>Alterar</a >
+           </td>
+           <td>
+                   <a href="#" class="btn waves-effect waves-light red ">
+                   <i class="material-icons prefix ">delete</i> Iliminar </a>
+           </td>
+          </tr>
+          <tr>
+            <td>w</td>
+            <td>w</td>
+            <td>w</td>
+            <td>w</td>
+            <td>w</td>
+            <td>w</td>
+            <td></td>
+            <td>
+                 <a href="FactVer.html" class="btn waves-effect waves-light ">
+                     <i class="material-icons  prefix">remove_red_eye</i>Ver </a> 
+            <td>
+                  <a  href="FactAlt.html" class="btn waves-effect waves-light orange darken-2">
+                    <i class="material-icons prefix">edit
+                  </i>Alterar</a>
+           </td>
+           <td>
+
+                   <a  href="#" class="btn waves-effect waves-light red ">
+                   <i class="material-icons prefix prefix ">delete</i> Iliminar </a > 
+           </td>
+          </tr>
+        </tbody>
+</table>  
+
+<p></p>
+<p></p> 
+    <div class="container">
+      <a  href="FactCad.html" class="waves-effect waves-light btn green">
+        <i class="material-icons  prefix ">account_circle</i>Cadastrar</a >
+    </div>
+  
+<!--materialize JS-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script >
+      const slide_menu  = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(slide_menu,{});
+
+       $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+    </script>
+ 
+ 
+</body>
+</html>
