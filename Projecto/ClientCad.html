@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Area de cadastro dos Clientes</title>
+   <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--materialize CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" type="text/html" href="Client.html">
+     <link rel="stylesheet" type="text/css" href="Home.css">
+    
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper" >
+      
+        <div class="container">
+              <!--logo-->
+              <a href="#" class="brand-logo">VeCa</a>
+
+              <a href="#" class="sidenav-trigger " data-target="mobile-navbar"><i class="material-icons">menu</i></a>
+                     
+
+                <ul class=" hide-on-med-and-down right" >
+                           <li><a href="Home.html" >Home</a></li>
+                           <li><a href="Adm.html" >Adm </a></li>
+                           <li><a href="Casa.html" >Casas</a></li>
+                           <li><a href="Prop.html" >Proprietario</a></li>
+                           <li><a href="Client.html" >Clientes</a></li>
+                           <li><a href="Fact.html" >Facturas</a></li>
+                 
+                </ul>
+        </div>
+      
+    </div>
+ </nav>     
+  <li> 
+    <ul class="sidenav " id="mobile-navbar" >
+      <li class="active"><a href="Home.html" ><i class="material-icons ">home</i> Home</a></li>
+      <li class="active"><a href="Adm.html"  ><i class="material-icons ">content_paste</i> Adm </a></li>
+      <li class="active"><a href="Casa.html"  ><i class="material-icons">store</i> Casas </a></li>
+      <li class="active"><a href="Prop.html" ><i class="material-icons">person</i> Proprietario</a></li>
+      <li class="active"><a href="Client.html"><i class="material-icons">contact_mail</i> Clientes</a></li>
+      <li class="active"><a href="Fact.html"  ><i class="material-icons">print</i> Facturas</a></li>
+      </ul> 
+    </li>
+
+         
+         <!--FORMULARIO CADASTRO-->
+ <div class="container">
+        <div class="row">
+                <div class="col-l3 m6 s12">
+                   <div class="card-panel">
+                   <form>
+                     <div class="input-field">
+                      <i class="material-icons prefix">account_circle</i>
+                        <input type="text">
+                        <label>Name</label>
+                      </div> 
+
+                      <div class="input-field">
+                      <i class="material-icons prefix">email</i>
+                        <input type="Email" >
+                        <label data-error="Email inválido"  data-success="email válido ">Email</label>
+   
+
+                      </div>
+
+                        <div class="input-field">
+                        <i class="material-icons prefix">call</i>
+                        <input type="text">
+                        <label>Telefone</label>
+                      </div>
+
+                      <div class="input-field">
+                      <i class="material-icons prefix">home</i>
+                        <input type="text">
+                        <label>Bairro</label>
+                      </div>
+
+                        <div class="input-field">
+                         <i class="material-icons prefix">perm_identity</i>
+                        <input type="text">
+                        <label>Nº do bilhete de identidade </label>
+                      </div>
+                       <div class="input-field">
+                         <i class="material-icons prefix">perm_identity</i>
+                          <input type="date" class="datepicker">
+                        <label>Data de registro </label>
+                      </div>
+
+     <!--BOTOES-->
+
+         <a class="btn waves-effect waves-light">
+            <i class="material-icons left">archive</i>Guardar
+          </a>
+         <a  class="btn waves-effect waves-light red">
+            <i class="material-icons left">close</i>Cancelar
+          </a>
+                   </form> 
+                   </div>
+                </div>
+        </div>
+    </div>
+
+ 
+
+
+
+  
+<!--materialize JS-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script >
+      const slide_menu  = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(slide_menu,{});
+
+       $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+    </script>
+ 
+ 
+</body>
+</html>
